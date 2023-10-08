@@ -1,0 +1,11 @@
+node_modules
+esp32
+streams
+temp/NordVPNSetup.exe
+temp/esp32-idf4-20210202-v1.14
+temp/main.py
+temp/old
+marcos@192.168.0.90
+relays_text.js
+whatsapp.js
+save_vide_stream.js

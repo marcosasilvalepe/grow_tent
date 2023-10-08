@@ -1,0 +1,242 @@
+<main>
+	<section id="sensor-data">
+		<div id="last-date">
+			<h2></h2>
+		</div>
+
+		<div id="temperature">
+			<h3></h3>
+			<h5>Temperature</h5>
+		</div>
+
+		<div id="humidity">
+			<h3></h3>
+			<h5>Humidity</h5>
+		</div>
+
+		<div id="next-record">
+			<h3>30s</h3>
+			<h5>Next Record</h5>
+		</div>
+	</section>
+
+	<section>
+		<div class="close-video-stream" data-video-feed="off">
+			<i class="far fa-video"></i>
+		</div>
+		<div class="video-stream">
+			
+		</div>
+	</section>
+
+	<section id="relays">
+
+		<div id="heater_1">
+			<div class="button">
+				<div>
+					<div class="button__icon-container">
+						<i class="far fa-check"></i>
+					</div>
+					<p>HEATER 1</p>
+				</div>
+				<span></span>
+			</div>
+			<div class="use-relay">
+				<div>
+					<i class="fal fa-info"></i>
+				</div>
+				<div>
+					<i class="far fa-check"></i>
+				</div>
+				<div>
+					<i class="far fa-times"></i>
+				</div>
+			</div>
+		</div>
+
+		<div id="heater_2">
+			<div class="button">
+				<div>
+					<div class="button__icon-container">
+						<i class="far fa-check"></i>
+					</div>
+					<p>HEATER 2</p>
+				</div>
+				<span></span>
+			</div>
+			<div class="use-relay">
+				<div>
+					<i class="fal fa-info"></i>
+				</div>
+				<div>
+					<i class="far fa-check"></i>
+				</div>
+				<div>
+					<i class="far fa-times"></i>
+				</div>
+			</div>
+		</div>
+
+		<div id="humidifier_1">
+			<div class="button">
+				<div>
+					<div class="button__icon-container">
+						<i class="far fa-check"></i>
+					</div>
+					<p>HUMIDIFIER 1</p>
+				</div>
+				<span></span>
+			</div>
+			<div class="use-relay">
+				<div>
+					<i class="fal fa-info"></i>
+				</div>
+				<div>
+					<i class="far fa-check"></i>
+				</div>
+				<div>
+					<i class="far fa-times"></i>
+				</div>
+			</div>
+		</div>
+
+		<div id="humidifier_2">
+			<div class="button">
+				<div>
+					<div class="button__icon-container">
+						<i class="far fa-check"></i>
+					</div>
+					<p>HUMIDIFIER 2</p>
+				</div>
+				<span></span>
+			</div>
+			<div class="use-relay">
+				<div>
+					<i class="fal fa-info"></i>
+				</div>
+				<div>
+					<i class="far fa-check"></i>
+				</div>
+				<div>
+					<i class="far fa-times"></i>
+				</div>
+			</div>
+		</div>
+
+		<div id="water_pump">
+			<div class="button">
+				<div>
+					<div class="button__icon-container">
+						<i class="far fa-check"></i>
+					</div>
+					<p>WATER PUMP</p>
+				</div>
+				<span></span>
+			</div>
+			<div class="use-relay">
+				<div>
+					<i class="fal fa-info"></i>
+				</div>
+				<div>
+					<i class="far fa-check"></i>
+				</div>
+				<div>
+					<i class="far fa-times"></i>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<section id="change-values">
+
+		<div class="tent-preferences" data-tent-preference="min_temp">
+			<div>
+				<span>Minimum Tent Temperature</span>
+			</div>
+			<div>
+				<input type="text">
+				<div class="save-tent-preferences" data-save-btn="">
+					<i class="fal fa-cloud-upload-alt"></i>
+				</div>
+			</div>
+		</div>
+
+		<div class="tent-preferences" data-tent-preference="min_humidity">
+			<div>
+				<span>Minimum Tent Humidity</span>
+			</div>
+			<div>
+				<input type="text">
+				<div class="save-tent-preferences" data-save-btn="">
+					<i class="fal fa-cloud-upload-alt"></i>
+				</div>
+			</div>
+		</div>
+
+		<div id="temperature-module">
+			<div>
+				<span>Temperature Module Sleep Time</span>
+			</div>
+			<div>
+				<input type="text">
+				<div class="save-module-preferences" data-save-btn="">
+					<i class="fal fa-cloud-upload-alt"></i>
+				</div>
+			</div>
+		</div>
+
+		<div id="water_pump-module">
+			<div>
+				<span>Water Pump Sleep Time</span>
+			</div>
+			<div>
+				<input type="text">
+				<div class="save-module-preferences" data-save-btn="">
+					<i class="fal fa-cloud-upload-alt"></i>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<section id="records">
+
+		<div id="more-records">
+			<div class="button">
+				<p>GET MORE<br>RECORDS</p>
+			</div>
+		</div>
+
+		<div id="records-table">
+			<div class="table-header">
+				<table>
+					<thead>
+						<tr>
+							<th class="line">Nº</th>
+							<th class="date">DATE</th>
+							<th class="temperature">TEMP</th>
+							<th class="humidity">HUMIDITY</th>
+						</tr>
+					</thead>
+				</table>
+			</div>
+			<div class="table-body">
+				<table>
+					<tbody></tbody>
+				</table>
+			</div>
+		</div>
+	</section>
+	
+	<!--
+	<section>
+		<div class="video-stream">
+			<img src="http://192.168.0.74:81/stream" crossorigin="">
+		</div>
+	</section>
+	-->
+	
+</main>
+
+<script type="text/javascript" src="js/jwt-decode.js"></script>
