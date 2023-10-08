@@ -7,8 +7,8 @@ const module_identifier = 'KJFHjfs33t4okjg';
 
 /************** WHATSAPP TWILIO STUFF ***********/
 
-const accountSid = 'ACd6db45eba7ca8b1e522992298182b453';
-const authToken = '125090726938b52b890ed6887a9bab10';
+const accountSid = 'twilio id';
+const authToken = 'twilio token';
 const client = require('twilio')(accountSid, authToken);
 
 const send_whatsapp = txt => {
@@ -17,7 +17,7 @@ const send_whatsapp = txt => {
             const message = await client.messages.create({
                 from: 'whatsapp:+14155238886',
                 body: txt,
-                to: 'whatsapp:+56968439779'
+                to: 'whatsapp:phone_number'
             });
             console.log(message);
             return resolve();
