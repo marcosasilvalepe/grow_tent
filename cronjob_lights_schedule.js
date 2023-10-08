@@ -7,7 +7,7 @@ const conn = mysql.createPool({
     connectionLimit: 15, 
     host: "localhost", 
     user: "root", 
-    password: "M@r$l1985_:)", 
+    password: "password", 
     database: "grow"
 });
 
